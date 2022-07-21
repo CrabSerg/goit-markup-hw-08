@@ -1,0 +1,58 @@
+.button {
+border: 1px solid transparenret;
+width: 200px;
+height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+font-family: inherit;
+cursor: pointer;
+
+color: var(--white-bg-color);
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+border-radius: 4px;
+border: 1px solid transparent;
+transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
+
+
+&--hovered:hover,
+&--hovered:focus {
+background-color: var(--accent-color-bg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+&--telegram::after {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+    
+margin-left: 10px;
+vertical-align: middle;
+    
+background-image: url(../images/icons/telegram.svg);
+}
+
+&--portfolio {
+width: auto;
+height: auto;
+padding: 6px 22px;
+font-weight: 500;
+line-height: 1.62;
+letter-spacing: 0.03em;
+color: var(--black-color);
+background-color: var(--bg-color-photo);
+    
+}
+&--portfolio:hover,
+&--portfolio:focus {
+color: var(--white-bg-color);
+background-color: var(--accent-color);
+border-radius: 4px;
+border: 1px solid transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}

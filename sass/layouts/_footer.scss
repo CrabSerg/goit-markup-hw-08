@@ -1,0 +1,105 @@
+.footer {
+padding-top: 60px;
+padding-bottom: 60px;
+
+background: var(--color-sidebar);
+}
+
+.footer__conteiner {
+display: flex;
+}
+
+.footer__address {
+margin-bottom: 9px;
+}
+
+.address__googlemaps {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--white-bg-color);
+font-style: normal;
+}
+
+.footer__item {
+margin-bottom: 9px;
+}
+
+.footer__contacts {
+text-decoration: none;
+}
+
+.footer__join {
+margin: 12px 0px 0px 70px;
+padding-bottom: 20px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white-bg-color);
+}
+
+/****************************************************************************************************************Форма футер**********************************************************************************************************************/
+.footer__subscribe {
+margin-top: 12px;
+margin-left: 93px;
+max-width: 570px;
+max-height: 86px;
+}
+    
+.footer__subscribe-txt {
+padding-bottom: 20px;
+margin: 0;
+    
+color: var(--white-bg-color);
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+    
+.footer__form {
+display: inline-flex;
+}
+    
+.footer__label {
+margin-right: 12px;
+}
+
+.footer__form-input {
+padding-left: 16px;
+    
+width: 358px;
+height: 50px;
+left: 815px;
+top: 2787px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: var(--color-sidebar);
+outline: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+    
+color: rgba(255, 255, 255, 0.6);
+    
+&:focus,
+&:focus-visible {
+border-color: var(--accent-color);
+}
+}   
+    
+.footer__list .footer__contacts {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,10 @@
+.body {
+font-family: var(--main-font), sans-serif;
+font-size: 14px;
+background-color: var(--white-bg-color);
+color:var(--black-color);
+    
+&.no-scroll {
+overflow: hidden;
+}
+}

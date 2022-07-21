@@ -1,0 +1,110 @@
+.header__address {
+display: flex  
+}
+.header__address--last:not(:last-child) {
+margin-right: 30px;
+}
+
+.header__conteiner--flex {
+display: flex;
+align-items: center;
+}
+
+.header__section {
+border: 1px solid #ECECEC;
+padding: 0px;
+padding-top: 25px;
+padding-bottom: 25px;  
+}
+/***********************************************************************Навигация***************************************************************************/
+.nav__list {
+display: flex;
+margin-right: 305px;
+}
+
+.nav__list .nav__item:not(:last-child) {
+margin-right: 50px;
+}
+.nav__bottom {
+padding: 32px 0 31px 0;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--black-color);
+
+transition: color var(--anim);
+
+/*                                                    Статическое подчеркивание (кнопки хедера-навигации)                                                           */
+&--curent-static {
+color: var(--accent-color);
+position: relative;
+}
+
+&--curent-static::after {
+content: "";
+position: absolute;
+bottom: -1px;
+left: 0;
+
+width: 100%;
+height: 4px;
+border-radius: 2px;
+display: inline-block;
+background-color: var(--accent-color);
+}
+/**********************************************************Подчеркивание ховер-фокус (кнопки хедера-навигации)********************************************************/
+&--curent {
+position: relative;
+}
+
+&--curent::after {
+content: "";
+position: absolute;
+bottom: -1px;
+left: 0;
+
+width: 100%;
+height: 4px;
+border-radius: 2px;
+display: inline-block;
+background-color: var(--white-bg-color);
+transition: background-color var(--anim);
+}
+
+&--curent:hover::after,
+&--curent:focus::after {
+background-color: var(--accent-color);
+}
+}
+
+
+.nav__bottom:hover,
+.nav__bottom:focus,
+.adress__link:hover,
+.adress__link:focus {
+color: var(--accent-color);
+}
+
+/**********************************************************************************************************************************************************/
+.adress__link {
+display: flex;
+align-items: flex-end;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+
+transition: color var(--anim);
+
+&--right {
+margin-right: 30px;
+}
+}
+
+.icon {
+margin-right: 10px;
+fill: currentColor;
+}
