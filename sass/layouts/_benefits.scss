@@ -1,13 +1,10 @@
 .benefits__list {
 display: flex;
+gap: 30px;
 }
 
 .benefits__item {
 width: 270px;
-}
-
-.benefits__list .benefits__item:not(:last-child) {
-margin-right: 30px;
 }
 
 .benefits__svg  {

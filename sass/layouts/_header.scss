@@ -1,8 +1,6 @@
 .header__address {
-display: flex  
-}
-.header__address--last:not(:last-child) {
-margin-right: 30px;
+display: flex;
+gap: 30px;
 }
 
 .header__conteiner--flex {
@@ -20,11 +18,9 @@ padding-bottom: 25px;
 .nav__list {
 display: flex;
 margin-right: 305px;
+gap: 50px;
 }
 
-.nav__list .nav__item:not(:last-child) {
-margin-right: 50px;
-}
 .nav__bottom {
 padding: 32px 0 31px 0;
 font-weight: 500;
@@ -98,10 +94,6 @@ letter-spacing: 0.02em;
 color: var(--grey-color);
 
 transition: color var(--anim);
-
-&--right {
-margin-right: 30px;
-}
 }
 
 .icon {

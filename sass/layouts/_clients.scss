@@ -8,11 +8,7 @@ margin-bottom: 50px;
 
 .clients__list {
 display: flex;
-justify-content: center;
-}
-
-.clients__card:not(:last-child) {
-margin-right: 30px;
+gap: 30px;
 }
 
 .clients__card-list {
