@@ -11,6 +11,14 @@ padding-bottom: 94px;
 .benefits__list {
 display: flex;
 gap: 30px;
+--item: 1;
+
+@media screen and (min-width: 768px) {
+--item: 2;
+}
+@media screen and (min-width: 1200px) {
+--item: 4;
+}
 }
 
 .benefits__item {

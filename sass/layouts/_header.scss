@@ -16,7 +16,19 @@ padding-bottom: 25px;
 
 .header__address {
 display: flex;
+flex-direction: column;
+
+@media screen and(min-width:768px) {
+display: flex;
+flex-direction: column;
+gap:10px;
+}
+
+@media screen and(min-width:1200px) {
+display: flex;
+flex-direction: row;
 gap: 30px;
+}
 }
 
 .header__conteiner--flex {
@@ -109,10 +121,24 @@ display: flex;
 align-items: flex-end;
 
 font-weight: 500;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+
+@media screen and(min-width:768px) {
+font-weight: 500;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+}
+
+@media screen and(min-width:1200px) {
+font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--grey-color);
+}
 
 transition: color var(--anim);
 }
