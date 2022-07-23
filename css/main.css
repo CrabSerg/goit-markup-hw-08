@@ -264,7 +264,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -281,7 +281,7 @@
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--grey-color);
 }
@@ -380,7 +380,7 @@
           align-items: center;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
@@ -842,7 +842,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-bg-color);
@@ -857,14 +857,14 @@
 }
 
 .footer__subscribe-txt {
-  padding-bottom: 20px;
+  padding-bottom: 200px;
   margin: 0;
-  color: var(--white-bg-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--white-bg-color);
 }
 
 .footer__form {
@@ -1024,7 +1024,7 @@
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 2.0;
   letter-spacing: 0.06em;
   color: var(--black-color);
 }
@@ -1113,7 +1113,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -1130,7 +1130,7 @@
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--grey-color);
 }
@@ -1233,7 +1233,7 @@
           align-items: center;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
