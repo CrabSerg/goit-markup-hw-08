@@ -1,3 +1,13 @@
+.portfolio {
+padding-top: 60px;
+padding-bottom: 60px;
+
+@media screen and(min-width:1200px) {
+padding-top: 94px;
+padding-bottom: 94px; 
+}
+}
+
 .portfolio__list {
 display: flex;
 justify-content: center;
@@ -10,9 +20,14 @@ padding: auto;
 }
 
 .portfolio__project-list {
-display: flex;
-flex-wrap: wrap;
-gap: var(--indent);
+--item: 1;
+
+@media screen and (min-width: 768px) {
+--item: 2;
+}
+@media screen and (min-width: 1200px) {
+--item: 3;
+}
 }
 
 .portfolio__project-item {

@@ -58,6 +58,12 @@
   list-style: none;
 }
 
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .large-txt {
   font-weight: 700;
   font-size: 36px;
@@ -82,7 +88,6 @@
       flex-wrap: wrap;
   gap: var(--indent);
 }
-
 .card-set__item {
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -171,10 +176,26 @@
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 .logo--header {
   color: var(--black-color);
@@ -185,7 +206,17 @@
 
 .header__logo {
   display: block;
-  margin-right: 93px;
+  margin-right: 276px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
@@ -484,6 +515,24 @@
   }
 }
 
+.header {
+  border: 1px solid #ECECEC;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
 .header__address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,20 +549,25 @@
           align-items: center;
 }
 
-.header__section {
-  border: 1px solid #ECECEC;
-  padding: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
 /***********************************************************************Навигация***************************************************************************/
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 305px;
-  gap: 50px;
+  margin-right: 30px;
+  gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-right: 90px;
+    gap: 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-right: 315px;
+    gap: 50px;
+  }
 }
 
 .nav__bottom {
@@ -626,6 +680,17 @@
   width: 696px;
 }
 
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,8 +733,12 @@
 }
 
 .work {
-  padding-top: 0;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
 }
 
 .work__headline {
@@ -707,8 +776,15 @@
 }
 
 .team {
-  padding-top: 0;
   background-color: var(--bg-color-photo);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__headline {
@@ -767,7 +843,14 @@
 }
 
 .clients {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__headline {
@@ -901,6 +984,17 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,12 +1010,17 @@
 }
 
 .portfolio__project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--indent);
+  --item: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__project-list {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project-list {
+    --item: 3;
+  }
 }
 
 .portfolio__project-item {

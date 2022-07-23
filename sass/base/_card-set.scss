@@ -4,8 +4,8 @@
 display: flex;
 flex-wrap: wrap;
 gap: var(--indent);
-}
 
-.card-set__item {
+&__item {
 flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
 }

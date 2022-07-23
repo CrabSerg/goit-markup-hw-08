@@ -1,3 +1,19 @@
+.header {
+border: 1px solid #ECECEC;
+padding-top: 16px;
+padding-bottom: 16px;
+
+@media screen and(min-width:768px) {
+padding-top: 26px;
+padding-bottom: 26px;
+}
+
+@media screen and(min-width:1200px) {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+}
+
 .header__address {
 display: flex;
 gap: 30px;
@@ -7,18 +23,23 @@ gap: 30px;
 display: flex;
 align-items: center;
 }
-
-.header__section {
-border: 1px solid #ECECEC;
-padding: 0px;
-padding-top: 25px;
-padding-bottom: 25px;  
-}
 /***********************************************************************Навигация***************************************************************************/
 .nav__list {
 display: flex;
-margin-right: 305px;
+margin-right: 30px;
+gap: 5px;
+
+@media screen and(min-width:768px) {
+margin-right: 90px;
+gap: 52px;
+}
+
+@media screen and(min-width:1200px) {
+margin-right: 315px;
 gap: 50px;
+}
+
+
 }
 
 .nav__bottom {

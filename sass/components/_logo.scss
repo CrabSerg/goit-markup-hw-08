@@ -1,10 +1,24 @@
 .logo {
 font-family: var(--secondary-font);
 font-weight: 700;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+
+@media screen and(min-width:768px) {
+font-weight: 700;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
+
+@media screen and(min-width:1200px) {
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: var(--accent-color);
+}
 
 &--header {
 color: var(--black-color); 
@@ -17,7 +31,15 @@ color: var(--white-bg-color);
 
 .header__logo {
 display: block;
+margin-right: 276px;
+
+@media screen and(min-width:768px) {
+margin-right: 87px;
+}
+
+@media screen and(min-width:1200px) {
 margin-right: 93px;
+}
 }
 
 .footer__logo {
