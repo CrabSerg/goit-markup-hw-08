@@ -100,7 +100,7 @@ color: var(--grey-color);
 position: relative;
 display: flex;
 
-& input  {
+& input {
 width: 448px;
 height: 40px;
 left: 576px;
@@ -126,6 +126,10 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: transparent;
 }
+}
+
+input  {
+width: 48px;
 }
 
 .form__input {
@@ -166,8 +170,12 @@ transform: translate(15%, 12%);
 margin-bottom: 20px;
 }
 
+.form__box-button {
+padding-bottom: 40px;
+}
+
 .form__policy {
-margin-right: 8px;
+margin: 0 8px 0 0;
 display: inline-flex;
 justify-content: center;
 align-items: center;
