@@ -29,12 +29,22 @@ gap: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 170px;
+width: 210px;
 height: 92px;
 color: var(--grey-color-icon);
 border: 1px solid var(--grey-color-icon);
 border-radius: 4px;
 transition: color var(--anim), border var(--anim);
+
+@media screen and (min-width: 768px) {
+width: 226px;
+height: 92px;
+}
+@media screen and (min-width: 1200px) {
+width: 170px;
+height: 92px;
+}
+
 
 &--hover:hover,
 &--hover:focus  {
