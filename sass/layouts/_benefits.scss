@@ -22,7 +22,7 @@ gap: 30px;
 }
 
 .benefits__item {
-width: 450px;
+width: 100%;
 
 @media screen and (min-width: 768px) {
 width: 354px;
@@ -34,7 +34,7 @@ width: 270px;
 
 .benefits__svg  {
 margin-bottom: 30px;
-width: 450px;
+width: 100%;
 height: 120px;
 display: flex;
 align-items: center;
