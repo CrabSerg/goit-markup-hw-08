@@ -1,5 +1,5 @@
 .mobile-menu-btn {
-padding: 12px 8px 12px 8px;
+padding: 11px 8px 11px 8px;
 border: none;
 background-color: transparent;
 z-index: 10;
@@ -18,8 +18,25 @@ display: flex;
 align-items: center;
 }
 
+.mobile-menu-burger {
+transition: 100ms;
+
+.mobile-menu-btn.is-open & {
+opacity: 0; 
+}
+}
+
 .mobile-menu-close {
 opacity: 0;
+transition: 100ms;
+
+&:hover {
+fill: #2196F3;
+}
+
+.mobile-menu-btn.is-open & {
+opacity: 1; 
+}
 }
 
 // Мобільне меню стилі
