@@ -554,6 +554,9 @@ input {
   -webkit-transition: 100ms;
   transition: 100ms;
 }
+.mobile-menu-burger:hover {
+  fill: #2196F3;
+}
 .mobile-menu-btn.is-open .mobile-menu-burger {
   opacity: 0;
 }

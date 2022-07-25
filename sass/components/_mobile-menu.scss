@@ -21,6 +21,10 @@ align-items: center;
 .mobile-menu-burger {
 transition: 100ms;
 
+&:hover {
+fill: #2196F3;
+}
+
 .mobile-menu-btn.is-open & {
 opacity: 0; 
 }
