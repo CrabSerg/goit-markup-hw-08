@@ -9,7 +9,11 @@ padding-bottom: 94px;
 }
 
 .clients__headline  {
+margin-bottom: 30px;
+
+@media screen and (min-width: 1200px) {
 margin-bottom: 50px;
+}
 }
 
 .clients__list {
