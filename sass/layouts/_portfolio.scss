@@ -11,6 +11,7 @@ padding-bottom: 94px;
 .portfolio__list {
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 gap: 8px;
 
 margin-bottom: 50px;
@@ -102,6 +103,7 @@ left: 0;
 transform: translateY(100%);
 
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center; 
 text-align: left;

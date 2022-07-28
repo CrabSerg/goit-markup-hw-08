@@ -702,6 +702,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -759,7 +761,7 @@ input {
 }
 
 .nav__bottom {
-  padding: 32px 0 31px 0;
+  padding: 32px 0 33px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -769,6 +771,17 @@ input {
   transition: color var(--anim);
   /*                                                    Статическое подчеркивание (кнопки хедера-навигации)                                                           */
   /**********************************************************Подчеркивание ховер-фокус (кнопки хедера-навигации)********************************************************/
+}
+@media screen and (min-width: 768px) {
+  .nav__bottom {
+    padding: 41px 0 41px 0;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__bottom {
+    padding: 32px 0 33px 0;
+  }
 }
 .nav__bottom--curent-static {
   color: var(--accent-color);
@@ -1501,6 +1514,8 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -1611,6 +1626,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
