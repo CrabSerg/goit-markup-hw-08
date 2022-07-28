@@ -774,13 +774,13 @@ input {
 }
 @media screen and (min-width: 768px) {
   .nav__bottom {
-    padding: 41px 0 41px 0;
+    padding: 40px 0 40px 0;
     gap: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav__bottom {
-    padding: 32px 0 33px 0;
+    padding: 32px 0 32px 0;
   }
 }
 .nav__bottom--curent-static {
